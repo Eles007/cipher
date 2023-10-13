@@ -1,0 +1,196 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.menu-cipher-caesar {
+  width: 100%;
+  min-height: 500px;
+
+  margin: 20px 0 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  border-radius: 30px;
+
+  -webkit-box-shadow: 0px 5px 29px 2px rgba(34, 60, 80, 0.08);
+  -moz-box-shadow: 0px 5px 29px 2px rgba(34, 60, 80, 0.08);
+  box-shadow: 0px 5px 29px 2px rgba(34, 60, 80, 0.08);
+}
+
+.input-container {
+  display: flex;
+  margin: 20px 0 20px 0;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.menu-input-container {
+  display: flex;
+}
+
+#input-text-cipher {
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  font-size: 23px;
+  border: 2px solid #3498db;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#input-text-cipher::placeholder {
+  color: #ccc;
+  font-size: 16px;
+}
+
+#input-text-cipher:focus {
+  border-color: #68b9f0;
+}
+
+#errorText {
+  height: 18px;
+  margin: 5px 0 0 130px;
+}
+
+#input-number-cipher {
+  text-align: center;
+  width: 140px; /* Ширина поля ввода с числами */
+  height: 40px;
+  padding: 10px;
+  font-size: 23px;
+  border: 2px solid #3498db;
+  border-left: 0px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#input-number-cipher::placeholder {
+  color: #ccc;
+  font-size: 16px;
+}
+
+#input-number-cipher:focus {
+  border-color: #68b9f0;
+}
+
+#input-number-cipher::-webkit-outer-spin-button,
+#input-number-cipher::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#submit-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  height: 64px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+  background-color: #68b9f0;
+}
+
+.output-text-block{
+  overflow: auto;
+  text-align: justify;
+}
+
+#output-text-cipher {
+  font-size: 30px;
+  margin: 20px;
+}
+
+/*---------------*/
+.box select {
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  width: 120px;
+  height: 64px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+/*-Взлом*/
+#input-text-break-cipher {
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  font-size: 23px;
+  border: 2px solid #e45428;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#input-text-break-cipher::placeholder {
+  color: #ccc;
+  font-size: 16px;
+}
+
+#input-text-break-cipher:focus {
+  border-color: #d68d6b;
+}
+
+#submit-button-break {
+  background-color: #e45428;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  height: 64px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit-button-break:hover {
+  background-color: #d68d6b;
+}
+
+.box-break select {
+  background-color: #e45428;
+  color: white;
+  padding: 12px;
+  width: 120px;
+  height: 64px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+#text-output-break-cipher {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 10px 60px 0 60px;
+  overflow: auto;
+}
+
+#text-output-break-cipher p {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}

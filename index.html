@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The caesar cipher</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu-cipher-caesar">
+        <div class="input-container">
+          <div class="menu-input-container">
+            <div class="box">
+              <select>
+                <option value="ru">Рус</option>
+                <option value="en">Eng</option>
+              </select>
+            </div>
+            <input
+              type="text"
+              name="input-text-cipher"
+              id="input-text-cipher"
+              placeholder="Введите текст..."
+              oninput="encryptAndValidate()"
+              onchange="changeColorInput()"
+            />
+            <input
+              type="number"
+              name="input-number-cipher"
+              id="input-number-cipher"
+              placeholder="Шаг сдвига..."
+              onchange="getDigit()"
+            />
+            <button
+              type="submit"
+              id="submit-button"
+              onclick="encryptAndValidate()"
+            >
+              <img
+                src="/free-icon-security-lock-8631498.png"
+                alt="Зашифровать"
+                width="50px"
+                height="50px"
+              />
+            </button>
+          </div>
+          <p id="errorText" style="color: red"></p>
+        </div>
+        <div class="output-text-block">
+          <p id="output-text-cipher"></p>
+        </div>
+      </div>
+      <div class="menu-cipher-caesar">
+        <div class="input-container">
+          <div class="menu-input-container">
+            <div class="box-break">
+              <select>
+                <option value="ru">Рус</option>
+                <option value="en">Eng</option>
+              </select>
+            </div>
+            <input
+              type="text"
+              name="input-text-break-cipher"
+              placeholder="Введите текст..."
+              id="input-text-break-cipher"
+            />
+            <button
+              type="submit"
+              id="submit-button-break"
+              onclick="displayAndBreakCipher()"
+            >
+              <img
+                src="/free-icon-hacking-4640231.png"
+                alt="Зашифровать"
+                width="50px"
+                height="50px"
+              />
+            </button>
+          </div>
+        </div>
+        <div id="text-output-break-cipher"></div>
+      </div>
+    </div>
+    <script src="/caesar.js"></script>
+  </body>
+</html>
